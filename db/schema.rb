@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170202213519) do
+ActiveRecord::Schema.define(version: 20170415175417) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -112,6 +112,8 @@ ActiveRecord::Schema.define(version: 20170202213519) do
     t.string   "file_content_type"
     t.integer  "file_file_size"
     t.datetime "file_updated_at"
+    t.integer  "course_id_id"
+    t.index ["course_id_id"], name: "index_videos_on_course_id_id", using: :btree
   end
 
   add_foreign_key "courses", "videos"
