@@ -1,7 +1,9 @@
+@import 'settings';
+@import 'foundation';
 
 .landing-hero {
-  background: url("landing-hero.jpg") top center no-repeat;
-  height: 75vh;
+  background: url("landing-hero.jpg") center right no-repeat;
+  height: 65vh;
   background-size: cover;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,7 +15,7 @@
 
 @media screen and (min-width: 40em) {
   .landing-hero {
-    background-position: center center;
+    background-position: center right;
   }
 }
 
@@ -39,4 +41,34 @@
   .landing-hero-content {
     padding-left: 50%;
   }
+}
+
+$marketing-site-three-up-width: 900px;
+
+.marketing-site-three-up {
+  text-align: center;
+  padding: 2rem 0;
+
+  .row {
+    max-width: $marketing-site-three-up-width;
+  }
+
+  .columns {
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 40em) {
+      margin-bottom: 0;
+    }
+  }
+
+  .fa {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+}
+
+.marketing-site-three-up-headline {
+  margin-bottom: 2rem;
+  font-size: 24px;
 }

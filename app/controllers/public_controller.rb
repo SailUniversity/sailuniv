@@ -9,6 +9,8 @@ class PublicController < ApplicationController
   end
 
   def nav
+  end
 
+  def footer
   end
 end
