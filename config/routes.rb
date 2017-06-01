@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root 'public#index'
+  get 'public/index'
+
+  get 'public/about'
+
+  get 'public/free'
+
   namespace :admin do
     resources :instructors
 resources :users

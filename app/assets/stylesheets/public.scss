@@ -1,0 +1,42 @@
+
+.landing-hero {
+  background: url("landing-hero.jpg") top center no-repeat;
+  height: 75vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .landing-hero {
+    background-position: center center;
+  }
+}
+
+.landing-hero-content {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.landing-hero-content h1 {
+  font-size: 32px;
+}
+
+.landing-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: lowercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .landing-hero-content {
+    padding-left: 50%;
+  }
+}
