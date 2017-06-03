@@ -12,7 +12,15 @@
         <li><%= link_to "About", root_path %></li>
         <li><%= link_to "Courses", root_path %></li>
         <li><%= link_to "Free Classes", root_path %></li>
-        <li><%= link_to "Log In", root_path %></li>
+        <% if user_signed_in? %>
+          <li>
+          <%= link_to('Log Out', destroy_user_session_path, :method => :delete) %>
+          </li>
+        <% else %>
+          <li>
+          <%= link_to('Log In', new_user_session_path)  %>
+          </li>
+        <% end %>
         <li>
           <button type="button" class="button hollow topbar-responsive-button">Enroll Today!</button>
         </li>
