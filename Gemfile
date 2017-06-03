@@ -35,6 +35,7 @@ gem 'administrate'
 gem 'bourbon'
 gem 'foundation-rails', '6.3.1'
 gem 'foundation-icons-sass-rails'
+gem 'gibbon'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
