@@ -22,7 +22,6 @@
           </li>
         <% end %>
         <li>
-          <!-- <button type="button" class="button hollow topbar-responsive-button">Enroll Today!</button> -->
           <% if user_signed_in? %>
             <li>
             <%= button_to('Your Account', edit_user_registration_path, type:'button', class:'button hollow topbar-responsive-button', method: 'get') %>
