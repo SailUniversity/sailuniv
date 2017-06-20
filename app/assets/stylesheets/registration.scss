@@ -1,0 +1,61 @@
+@import 'settings';
+@import 'foundation';
+.background-user-reg {
+  background: url("user-reg.jpg") center center no-repeat;
+  background-size: cover;
+}
+.registration-form {
+  padding: 1rem 1.5em;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  border-radius: .5rem;
+  background-color: #fff;
+
+  h4 {
+    color: $black;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase
+  }
+
+  label {
+    text-transform: uppercase;
+    color: $black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    color: $black;
+  }
+
+  input:focus {
+    opacity: 1;
+  }
+}
+
+.registration-form-username,
+.registration-form-info {
+  border-radius: 30px;
+  border: none;
+  opacity: .6;
+  transition: all ease .4s;
+}
+
+.registration-form-button {
+  border-radius: 30px;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 1rem;
+  transition: all ease .4s;
+
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
