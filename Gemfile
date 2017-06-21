@@ -36,7 +36,7 @@ gem 'paperclip'
 gem 'administrate'
 gem 'bourbon'
 gem 'foundation-rails', '6.3.1'
-gem 'foundation-icons-sass-rails'
+gem "font-awesome-rails"
 gem 'gibbon'
 
 group :development, :test do

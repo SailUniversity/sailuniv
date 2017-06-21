@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'dashboard/landing'
+
   root 'public#index'
   get 'public/index'
 

@@ -88,9 +88,8 @@ GEM
     faraday (0.12.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
-    foundation-icons-sass-rails (3.0.0)
-      railties (>= 3.1.1)
-      sass-rails (>= 3.1.1)
+    font-awesome-rails (4.7.0.0)
+      railties (>= 3.2, < 5.1)
     foundation-rails (6.3.1.0)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
@@ -235,7 +234,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
-  foundation-icons-sass-rails
+  font-awesome-rails
   foundation-rails (= 6.3.1)
   gibbon
   jbuilder (~> 2.5)
