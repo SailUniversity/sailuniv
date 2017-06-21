@@ -9,6 +9,9 @@ class PublicController < ApplicationController
   end
 
   def nav
+    if user_signed_in?
+      @user = User.current
+    end
   end
 
   def footer
