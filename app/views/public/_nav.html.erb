@@ -16,7 +16,7 @@
                 <li><%= link_to ("<i class='fa fa-dashboard'></i> Dashboard").html_safe, dashboard_landing_path %></li>
                 <li><%= link_to ("<i class='fa fa-life-ring'></i> Support").html_safe, root_path %></li>
                 <li><%= link_to ("<i class='fa fa-cog'></i> Settings").html_safe, edit_user_registration_path %></li>
-                <li><%= link_to('Sign Out', destroy_user_session_path, :method => :delete) %></li>
+                <li><%= link_to ("<i class='fa fa-sign-out'></i> Sign Out").html_safe, destroy_user_session_path, :method => :delete %></li>
               </ul>
             </li>
           </ul>
