@@ -51,13 +51,13 @@
   <div class="marketing-site-footer-bottom">
     <div class="row large-unstack align-middle">
       <div class="column">
-        <p>&copy; 2017 Rights Reserved Sail University</p>
+        <p>&copy; <%= Time.current.year %> Rights Reserved Sail University</p>
       </div>
       <div class="column">
         <ul class="menu marketing-site-footer-bottom-links">
-          <li><a href="#">Home</a></li>
+          <li><%= link_to 'Home', root_path %></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><%= link_to 'Privacy Policy', "https://app.termly.io/document/privacy-policy/185a0f18-6427-4cf3-b988-d4ce42f9f765", target: 'blank' %></li>
         </ul>
       </div>
     </div>

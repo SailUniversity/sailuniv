@@ -12,8 +12,10 @@
   </head>
 
   <body>
-  <%= render partial: "public/nav", locals: { navigation: @public } %>
+    <%= render partial: "public/nav", locals: { navigation: @public } %>
+    <%= render "layouts/alerts" %>
+    <%# <%= render 'cookies_eu/consent_banner'%> %>
     <%= yield %>
-<%= render partial: "public/footer", locals: { navigation: @public } %>
+    <%= render partial: "public/footer", locals: { navigation: @public } %>
   </body>
 </html>

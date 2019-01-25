@@ -1,0 +1,16 @@
+<% unless alert.nil? %>
+<div data-closable class="alert-box callout alert">
+  <i class="fa fa-ban"></i> <%= alert %>
+<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&CircleTimes;</span>
+  </button>
+</div>
+<% end %>
+<% unless notice.nil? %>
+<div data-closable class="alert-box callout success">
+  <i class="fa fa-check"></i> <%= notice %>
+  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&CircleTimes;</span>
+  </button>
+</div>
+<% end %>

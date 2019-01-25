@@ -5,10 +5,18 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-	after_create SubscribeUserToMailingListJob.perform_later
+
 	private
 	def set_default_role
 		self.role ||= Role.find_by_name('registered')
 
 	end
+
+  # after_create :welcome_email_send
+  # def welcome_email_send
+  #   WelcomeMailer.welcome_email_send.(self).deliver
+  #   redirect_to dashboard_landing_path
+  # end
+  # after_create SubscribeUserToMailingListJob.perform_later
+
 end
