@@ -14,8 +14,39 @@
   <body>
     <%= render partial: "public/nav", locals: { navigation: @public } %>
     <%= render "layouts/alerts" %>
-    <%# <%= render 'cookies_eu/consent_banner'%> %>
-    <%= yield %>
-    <%= render partial: "public/footer", locals: { navigation: @public } %>
+    <% if user_signed_in? %>
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="nav-bar hide-for-large">
+          <div class="nav-bar-left">
+            <%= link_to 'Home', dashboard_landing_path %>
+          </div>
+          <div class="nav-bar-right">
+            <ul class="menu">
+              <li>
+              <li>
+                <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+                  <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <!-- End of the menu stuff -->
+
+      <!-- Body Stuff -->
+      <div class="body-info">
+        <%= yield %>
+       </div>
+       <!-- End o da body -->
+     </div>
+    <% else %>
+      <%= yield %>
+    <% end %>
+
   </body>
 </html>
